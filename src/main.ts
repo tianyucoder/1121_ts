@@ -1,2 +1,2 @@
-import './1_hello/hello'
+import './2_data_type/dataType'
 document.write('Hello Webpack TS!')
