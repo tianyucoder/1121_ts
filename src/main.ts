@@ -1,2 +1,2 @@
-import './3_interface/interface'
+import './4_class/class_test2'
 document.write('Hello Webpack TS!')
