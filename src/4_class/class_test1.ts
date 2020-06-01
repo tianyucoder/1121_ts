@@ -1,4 +1,3 @@
-
 class Person {
 	//声明属性
 	name:string
