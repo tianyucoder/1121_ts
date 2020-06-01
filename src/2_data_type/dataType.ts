@@ -31,6 +31,71 @@
 	//arr3 = [1,'2'] //报错
 	//arr3 = ['2',6,8 ] //报错
 
+	//枚举
+	enum BookNames {
+		Zhao = 100,
+		Qian,
+		Sun,
+		Li,
+		Zhou
+	}
+	// console.log(BookNames)
+	// console.log(BookNames[100])
+	// console.log(BookNames.Zhao)
 
+	//any
+	let notSure:any
+	notSure = true
+	notSure = 'maybe a string'
+	notSure = 100
+	// console.log(notSure)
+	let arr01:any[]
+	arr01 = [{},[],true,'asd']
+
+	function test(params:any):any{
+		console.log(params)
+	}
+	//test('tom')
+
+	//void
+	//使用void去限制函数返回值类型
+	function fn(): void {
+		console.log('fn()')
+		//return 1 //error
+		//return '1' //error
+		// return undefined //ok
+		// return null //ok
+	}
+	fn()
+	//几乎不会用void去限制变量
+	let a:void
+	a = undefined
+	a = null
+
+	//object
+	function fn2(a:object):object{
+		console.log('fn2被调用了',a)
+		return {}
+	}
+	fn2({})
+
+	//联合类型
+	function myToString (param:number|string):string{
+		return param.toString()
+	}
+	//console.log(myToString('123'))
+
+	function getLength(param:number|string):number{
+		if((<string>param).length){
+			return (param as string).length
+		}else{
+			return param.toString().length
+		}
+	}
+	//console.log(getLength('1'))
+
+	//类型推断
+	let demo1:any[]
+	demo1 = []
 
 })()

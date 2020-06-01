@@ -1,2 +1,2 @@
-import './2_data_type/dataType'
+import './3_interface/interface'
 document.write('Hello Webpack TS!')
