@@ -1,2 +1,2 @@
-import './4_class/class_test6'
+import './6_generic/generic5'
 document.write('Hello Webpack TS!')
